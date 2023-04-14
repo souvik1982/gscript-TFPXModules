@@ -24,7 +24,7 @@ HOME
 SETVAC gantry_head_inner 0
 SETVAC gantry_head_outer 0
 SETVAC croc_launchROC_top 0
-SETVAC croc_launchROC_top 0
+SETVAC croc_launchROC_bot 0
 SETVAC croc_launchHDI 0
 SETLOG "LOG_SPLIT_Assembly_CROC_DualROC_DataGeneration.txt"
 SETERRORMODE prompt
@@ -198,7 +198,7 @@ MOVENAME crocStaging 100
 GOTOIFN @STEP_TEN $choice
 SETVAC "croc_weight_{$station}" 1
 WAIT 1000
-SETVAC croc_chuck_3 0
+SETVAC croc_launchHDI 0
 
 
 # Step 11. Check that the HDI was moved and the adhesive was applied
